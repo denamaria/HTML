@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        header {
+            background-color: rgb(105, 40, 184);
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 0; /* Position at the top */
+            left: 0; /* Align to the left */
+            z-index: 1000; /* Ensure header is above other content */
+        }
+        footer {
+            background-color: rgb(72, 7, 72);
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            bottom: 0; /* Position at the bottom */
+            left: 0; /* Align to the left */
+            z-index: 1000; /* Ensure footer is above other content */
+        }
+        .sidebar {
+            background-color: rgb(86, 27, 137);
+            width: 50px;
+            height: calc(100% - 100px); /* Take up remaining height */
+            position: fixed;
+            top: 50px; /* Align below the header */
+            left: 0; /* Align to the left */
+            z-index: 1000; /* Ensure sidebar is above other content */
+        }
+        .content {
+            margin-left: 50px; /* Adjust for sidebar width */
+            margin-top: 50px; /* Adjust for header height */
+            margin-bottom: 50px; /* Adjust for footer height */
+            padding: 20px; /* Add padding to content area */
+        }
+</style>
+</head>
+<body>
+<header>
+<div><h1>HEADER</h1></div>
+</header>
+<div class="sidebar"></div>
+<div class="content">
+<!-- Your content goes here -->
+<p>Lorem ipsum dolo
+    hey ????r sit amet consectetur adipisicing elit. Veniam illum possimus sint debitis aperiam dignissimos dolorem, quia facilis nam nisi vitae distinctio? Quas exercitationem eveniet laboriosam quisquam adipisci recusandae numquam.</p>
+</div>
+<footer>
+<h1>FOOTER</h1>
+</footer>
+</body>
+</html>

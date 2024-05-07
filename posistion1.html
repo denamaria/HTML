@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header, Sidebar, and Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            height: 100vh;
+            overflow: auto; /* Enable body scrolling */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            z-index: 1000; /* Ensure header and footer stay above other content */
+        }
+        
+        header {
+            top: 0;
+            left: 0;
+        }
+        
+        footer {
+            bottom: 0;
+            left: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            margin-top: 80px; /* Adjust margin to accommodate fixed header */
+            margin-bottom: 80px; /* Adjust margin to accommodate fixed footer */
+            display: flex;
+            overflow: auto; /* Enable scrolling for main content */
+        }
+
+        aside {
+            width: 250px;
+            background-color: #f0f0f0;
+            position: fixed;
+            top: 80px; /* Height of the fixed header */
+            bottom: 80px; /* Height of the fixed footer */
+            left: 0;
+            z-index: 999; /* Lower z-index to ensure sidebar appears below header */
+            overflow-y: auto; /* Enable scrolling for sidebar */
+        }
+
+        section {
+            flex: 1;
+            margin-left: 270px; /* Width of sidebar + some spacing */
+        }
+        
+        /* Add some content for demonstration */
+        main p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><h1>Header</h1></div>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <!-- Add more sidebar content if needed -->
+            </ul>
+        </aside>
+
+        <section>
+            <!-- Main content goes here -->
+            <p>This is the main content of the webpage. You can add more content here...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio ac odio scelerisque cursus sed ut libero. Fusce interdum mauris sit amet tortor malesuada, vel tincidunt arcu tristique. Sed eu turpis quis justo fermentum suscipit. Vestibulum nec sapien vel nisl dictum pretium. Aenean ac efficitur est. Donec luctus enim ac lacus dapibus, nec scelerisque odio eleifend.</p>
+            <!-- Add more content if needed -->
+        </section>
+    </main>
+
+    <footer>
+        <div><h1>Footer</h1></div>
+    </footer>
+</body>
+</html>
+

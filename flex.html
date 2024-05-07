@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-direction: row;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            align-content: center; 
+            flex-shrink: 0;
+            align-self: baseline;
+        }
+        .div1 {
+    background-color: #da6bde; 
+    width: 30px;
+    height: 40px;
+}
+
+.div2 {
+    background-color: #c785f2; 
+    height: 70px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.div3 {
+    background-color: #9bdc6c;
+    height: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-div div1">Div 1</div>
+        <div class="inner-div div2">Div 2</div>
+        <div class="inner-div div3">Div 3</div>
+    </div>
+</body>
+</html>

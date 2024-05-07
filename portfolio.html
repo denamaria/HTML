@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #footer {
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: rgb(54, 4, 97);
+        color: white;
+    }
+    .topnav {
+  overflow: hidden;
+  background-color: #bc87f5;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #8f34ef;
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  background-color: #7726c8;
+  color: white;
+}
+    #grad1 {
+  height: 700px;
+  background-color: red; 
+  background-image: linear-gradient(to bottom right, rgb(221, 165, 243), rgb(242, 242, 204));
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(229, 229, 129); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(235, 225, 120); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e6ee05; 
+}
+    </style>
+    
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#contact">Contact</a>
+      </div>
+    <div id="grad1"></div>
+    <div id="footer">
+        <h6><strong>Connect with me</strong></h6>
+    </div>
+</body>
+</html>

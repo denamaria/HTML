@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Animation Example</title>
+<style>
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto; 
+    text-align: center;
+    transition:all 1s ease 2s;
+
+    
+}
+ .box:hover{
+    background-color: blueviolet;
+    height: 200px;
+    transform: translateX(200px);
+ }
+ .box1{
+    background-color: aliceblue;
+ }
+ 
+    </style>
+</head>
+<body>
+<div class="box box1" :hover >Hover over me!</div>
+</body>
+</html>

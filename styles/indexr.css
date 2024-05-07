@@ -1,0 +1,80 @@
+.header p{
+    padding-left: 30px;
+}
+.header h1,
+.header h2 {
+margin: 0; 
+background-color: orange;
+padding: 30px;
+
+
+}
+
+
+.details{
+background-color:  black;
+color: #ffffff;
+width: 30%;
+padding-left: 50px;
+margin-right: -30px;
+}
+.details hr {
+border-color: yellow;
+
+
+}
+.qualification td{
+padding-right: 50px;
+width: 30%;
+}
+#number1,#number2{
+padding-bottom: 20px;
+}
+#photo{
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 10px;
+padding-bottom: 10px;
+}
+
+.skills #skill1,#skill2,#skill3{
+padding-left: 200px;
+}
+#year1,#year2,#year3 {
+vertical-align: top;
+width: 30%;
+padding-top: 17px;
+}
+
+
+.contact a {
+text-decoration: none;
+color:white;
+}
+.parent_address{
+    background-color: rgb(55, 50, 50);
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+.child_address{
+    display: inline;
+    padding-left: 30px;
+    background-color: orange;
+    margin-left: 0px;
+    padding-top: 5px;
+   padding-bottom: 5px;
+   
+}
+
+.contact div {
+    padding: 5px;
+}
+.experience td{
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    }
+    .experience tr{
+    padding-bottom: 20px;
+    }
